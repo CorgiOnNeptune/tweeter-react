@@ -10,7 +10,7 @@ function TweetForm() {
       </section>
 
       <section class="newtweet" id="tweet-form">
-        <form method="post" action="/tweets" class="newtweet__form">
+        <form onSubmit={e => e.preventDefault()} method="post" action="/tweets" class="newtweet__form">
           <textarea class="form__textarea" name="text" placeholder={placeHolderText}></textarea>
           <input type="submit" value="Tweet" class="form__input" />
           <span class="form__counter">140</span>
