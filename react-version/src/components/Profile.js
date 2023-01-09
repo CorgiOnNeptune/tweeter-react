@@ -1,7 +1,7 @@
-function Profile() {
-  const firstName = 'Amy';
-  const lastName = 'Mansell';
-  const avatar = './assets/profile-hex.png';
+function Profile(props) {
+  const firstName = props.firstName
+  const lastName = props.lastName
+  const avatar = props.avatar;
 
   return (
     <aside>
